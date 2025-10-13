@@ -1,103 +1,61 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from 'react'
+import { Link } from 'react-scroll'
+import { SiCoffeescript } from "react-icons/si";
+import Button from './layouts/Button';
+import {FaX, FaBars} from 'react-icons/fa6'
 
 const Navbar = () => {
-    const[darkMode, setDarkMode] = useState('dark')
-    useEffect(()=>{
-            console.log(darkMode)
-    },[darkMode])
+
+  const [menu, setMenu] = useState(false);
+
+  const handleChange = () => {
+    setMenu(!menu)
+  }
+
+  const closeMenu = () => {
+    setMenu(false)
+  }
+
+
   return (
-    <div className={darkMode?'dark':'light'}>
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold cursor-pointer">
-            Muhammad Bilal
+    <div className='fixed w-full z-10'>
+      <div>
+        <div className='flex flex-row justify-between items-center p-5 lg:px-15 px-5 bg-gradient-to-r from-backgroundColor to-brightColor   shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+          <div className='flex flex-row gap-2 items-center cursor-pointer'>
+            {/* <span><SiCoffeescript size={25}/></span>  */}
+            <h1 className='text-xl font-semibold'>Muhammad Bilal</h1>
           </div>
-          <div className="hidden md:flex space-x-8">
-            <button className="text-gray-700 dark:text-gray-600 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 capitalize cursor-pointer">
-              Home
-            </button>
-            <button className="text-gray-700 dark:text-gray-600 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 capitalize cursor-pointer">
-              About
-            </button>
-            <button className="text-gray-700 dark:text-gray-600 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 capitalize cursor-pointer">
-              Skills
-            </button>
-            <button className="text-gray-700 dark:text-gray-600 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 capitalize cursor-pointer">
-              Experience
-            </button>
-            <button className="text-gray-700 dark:text-gray-600 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 capitalize cursor-pointer">
-              Projects
-            </button>
-            <button className="text-gray-700 dark:text-gray-600 hover:text-yellow-600 dark:hover:text-yellow-400 transition-colors duration-300 capitalize cursor-pointer">
-              Contact
-            </button>
-          </div>
-          <div className="flex items-center space-x-4">
-            {/* <button
-              className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
-              title="Switch to French">
-              <div className="flex items-center space-x-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="lucide lucide-languages w-4 h-4"
-                >
-                  <path d="m5 8 6 6"></path>
-                  <path d="m4 14 6-6 2-3"></path>
-                  <path d="M2 5h12"></path>
-                  <path d="M7 2h1"></path>
-                  <path d="m22 22-5-10-5 10"></path>
-                  <path d="M14 18h6"></path>
-                </svg>
-                <span className="text-xs font-semibold uppercase">en</span>
-              </div>
-            </button> */}
-            <button onChange={(event)=>setDarkMode(event.target.value)} className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-moon w-5 h-5 animate-pulse"
-              >
-                <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-              </svg>
-            </button>
-            <button className="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                className="lucide lucide-menu w-5 h-5"
-              >
-                <line x1="4" x2="20" y1="12" y2="12"></line>
-                <line x1="4" x2="20" y1="6" y2="6"></line>
-                <line x1="4" x2="20" y1="18" y2="18"></line>
-              </svg>
-            </button>
+          <nav className='hidden md:flex flex-row items-center gap-8 text-lg font-semibold'>
+            <Link to='/' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Home  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='about' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>About  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='skills' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Skills  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='experience' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Experience  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='projects' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Projects  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='contact' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Contact  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+          </nav>
+          {/* <div className='hidden lg:flex'>
+            <Button title='Login'/>
+          </div> */}
+          <div className='md:hidden flex items-center cursor-pointer'>
+            {
+              menu ? ( <FaX size={25} onClick={handleChange}/> ) : ( <FaBars size={25} onClick={handleChange}/> )
+            }
           </div>
         </div>
-      </nav>
+        {/* mobile menu */}
+        <div className={` ${
+            menu ? "translate-x-0" : "-translate-x-full"
+          } lg:hidden flex flex-col absolute bg-black text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
+        <Link to='/' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-brightColor' onClick={closeMenu}>Home  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='menu' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-brightColor' onClick={closeMenu}>Menu  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='about' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-brightColor' onClick={closeMenu}>About Us  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='products' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-brightColor' onClick={closeMenu}>Products  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='reviews' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-brightColor' onClick={closeMenu}>Reviews  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-black transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            {/* <Button title='Login'/> */}
+        </div>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
