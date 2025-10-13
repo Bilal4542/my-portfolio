@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const[darkMode, setDarkMode] = useState('dark')
+    useEffect(()=>{
+            console.log(darkMode)
+    },[darkMode])
   return (
-    <div>
+    <div className={darkMode?'dark':'light'}>
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="text-xl font-bold cursor-pointer">
@@ -29,10 +33,9 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex items-center space-x-4">
-            <button
+            {/* <button
               className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg"
-              title="Switch to French"
-            >
+              title="Switch to French">
               <div className="flex items-center space-x-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +58,8 @@ const Navbar = () => {
                 </svg>
                 <span className="text-xs font-semibold uppercase">en</span>
               </div>
-            </button>
-            <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
+            </button> */}
+            <button onChange={(event)=>setDarkMode(event.target.value)} className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-400 hover:scale-110 transition-all duration-300 shadow-md hover:shadow-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
