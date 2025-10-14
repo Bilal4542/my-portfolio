@@ -4,21 +4,21 @@ import { FaRegEnvelope } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className='flex justify-center items-center w-[90%] m-auto'>
-      <div className="flex items-center justify-center flex-col gap-2">
-        <h1 className='text-5xl font-bold mt-28'>Muhammad Bilal</h1>
+    <div className='flex justify-center items-center w-[90%] m-auto  h-screen'>
+      <div className="flex items-center justify-center flex-col gap-3">
+        <h1 className='text-7xl font-bold mt-20'>Muhammad Bilal</h1>
         <p className='text-gray-600'>Khyber Pakhtunkhwa Peshawar, Pakistan</p>
         <p className='font-semibold text-gray-700 text-md'>Full-Stack Developer | MERN, Next JS, Nest JS | Building Scalable Web Apps</p>
-        <div className='bg-amber-300 flex items-center justify-center gap-1 text-lg font-semibold'>
-          <button className='bg-gradient-to-r bg-blue-500 text-white p-3 rounded-2xl'>Download CV</button>
-          <button className='bg-blue-500'>Contact Me</button>
-          <button>View Projects</button>
+        <div className='flex items-center justify-center gap-4 text-lg font-semibold'>
+          <button className='bg-gradient-to-r from-blue-500 to-blue-300 text-white p-3 rounded-2xl  hover:border-2 hover:border-blue-500 hover:from-blue-300 hover:to-blue-500 cursor-pointer transition-all duration-100'>Download CV</button>
+          <button className='border-2 p-3 rounded-2xl border-blue-500 hover:bg-gradient-to-r hover:from-blue-300 hover:to-blue-500 hover:text-white cursor-pointer transition-all duration-100'>Contact Me</button>
+          <button className='bg-gradient-to-r from-blue-500 to-blue-300 text-white p-3 rounded-2xl  hover:border-2 hover:border-blue-500 hover:from-blue-300 hover:to-blue-500 cursor-pointer transition-all duration-100'>View Projects</button>
         </div>
-        <div className="">
-          <a href=""><span><FiLinkedin/></span></a>
-          <a href=""><span><FiGithub /></span></a>
-          <a href=""><span><FaRegEnvelope /></span></a>
-          <a href=""><span><FiPhone  /></span></a>
+        <div className="flex items-center justify-center gap-7 p-4">
+          <a href="https://github.com/Bilal4542" target='_blank' className='text-2xl bg-white shadow-xl p-3 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-200 hover:scale-125'><span className=''><FiGithub /></span></a>
+          <a href="https://www.linkedin.com/in/muhammad-bilal-b8b410329/" target='_blank' className='text-2xl bg-white shadow-xl p-3 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-200 hover:scale-125'><span className=''><FiLinkedin/></span></a>
+          <a href="mbilal45422@gmail.com" target='_blank' className='text-2xl bg-white shadow-xl p-3 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-200 hover:scale-125'><span className=''><FaRegEnvelope /></span></a>
+          <a href="+923101096610" target='_blank' className='text-2xl bg-white shadow-xl p-3 rounded-full hover:bg-blue-500 hover:text-white transition-all duration-200 hover:scale-125'><span className=''><FiPhone  /></span></a>
         </div>
       </div>
     </div>
