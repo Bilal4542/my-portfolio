@@ -7,7 +7,7 @@ const Skills = () => {
         <h1 className='text-4xl font-bold mt-8'>Technical Skills</h1>
         <div className="bg-blue-500 rounded h-1 w-[20%] m-auto"></div>
       </div>
-      <div className='flex items-center justify-between gap-12'>
+      <div className='md:flex items-center justify-between gap-12'>
         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2'>
           <h1 className='text-2xl font-bold pt-4'>Languages</h1>
           <div className='flex items-center justify-between'>
@@ -71,7 +71,7 @@ const Skills = () => {
           </div>
           </div>
         </div>
-      <div className='flex items-center justify-between gap-12 mt-14'>
+      <div className='md:flex items-center justify-between gap-12 mt-14'>
         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2'>
           <h1 className='text-2xl font-bold pt-4'>Databases and Cloud</h1>
           <div className='flex items-center justify-between'>
