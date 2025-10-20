@@ -17,11 +17,11 @@ const Experience = () => {
         <p className='flex items-center text-gray-500'><span className='font-semibold mr-2'>Tech Pioneers </span> <span className='flex items-center gap-1'><LuMapPin/>Onsite</span>, Peshawar, Pakistan</p>
         <p className='text-gray-500'>Led team, designed architecture, mentored juniors, delivered scalable applications using MERN stack and modern development practices.</p>
         <div className="flex gap-4">
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>React</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NodeJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NextJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>ExpressJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>MongoDB</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl text-sm'>React</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NodeJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NextJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>ExpressJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>MongoDB</span>
         </div>
       </div>
       <div className="w-[80%] m-auto p-8 mt-12 flex flex-col justify-center gap-3 shadow-xl">
@@ -32,11 +32,11 @@ const Experience = () => {
         <p className='flex items-center text-gray-500'><span className='font-semibold mr-2'>Bright Code Lab </span> <span className='flex items-center gap-1'><LuMapPin/>Onsite</span>, Peshawar, Pakistan</p>
         <p className='text-gray-500'>At Bride Code Lab, I worked as a Junior MERN Stack Developer, where I contributed to building and maintaining web applications using MongoDB, Express.js, React.js, and Node.js.</p>
         <div className="flex gap-4">
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>React</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NodeJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NextJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>ExpressJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>MongoDB</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>React</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NodeJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NextJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>ExpressJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>MongoDB</span>
         </div>
       </div>
       <div className="w-[80%] m-auto p-8 mt-12 flex flex-col justify-center gap-3 shadow-xl">
@@ -47,11 +47,11 @@ const Experience = () => {
         <p className='flex items-center text-gray-500'><span className='font-semibold mr-2'>Bingtechs Solutions </span> <span className='flex items-center gap-1'><LuMapPin/>Onsite</span>, Peshawar, Pakistan</p>
         <p className='text-gray-500'>At Bingtechs Solutions, I worked as a React Developer, where I focused on building dynamic and user-friendly web applications.</p>
         <div className="flex gap-4">
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>React</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NodeJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NextJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>ExpressJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>MongoDB</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>React</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NodeJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NextJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>ExpressJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>MongoDB</span>
         </div>
       </div>
       <div className="w-[80%] m-auto p-8 mt-12 flex flex-col justify-center gap-3 shadow-xl">
@@ -62,11 +62,11 @@ const Experience = () => {
         <p className='flex items-center text-gray-500 font-semibold'>Islamia College Peshawar</p>
         <p className='text-gray-500'>Vote Connect is a modern online voting platform built using the MERN (MongoDB, Express.js, React, and Node.js) stack. The primary aim of this project is to create a secure and efficient voting system that can be used by both educational institutions, such as universities and colleges, as well as for large-scale national elections..</p>
         <div className="flex gap-4">
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>React</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NodeJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NextJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>ExpressJS</span>
-          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>MongoDB</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>React</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NodeJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>NextJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>ExpressJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl  text-sm'>MongoDB</span>
         </div>
       </div>
     </div>
