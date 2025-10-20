@@ -54,6 +54,21 @@ const Experience = () => {
           <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>MongoDB</span>
         </div>
       </div>
+      <div className="w-[80%] m-auto p-8 mt-12 flex flex-col justify-center gap-3 shadow-xl">
+        <div className="flex items-center justify-between">
+          <h1 className='text-2xl font-semibold'>Final Year Project || Online Voting System</h1>
+          <p className='text-blue-400 font-semibold flex items-center gap-1'><FaRegCalendar/> July 2024 - October 2024</p>
+        </div>
+        <p className='flex items-center text-gray-500 font-semibold'>Islamia College Peshawar</p>
+        <p className='text-gray-500'>Vote Connect is a modern online voting platform built using the MERN (MongoDB, Express.js, React, and Node.js) stack. The primary aim of this project is to create a secure and efficient voting system that can be used by both educational institutions, such as universities and colleges, as well as for large-scale national elections..</p>
+        <div className="flex gap-4">
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>React</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NodeJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>NextJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>ExpressJS</span>
+          <span className='p-2 bg-blue-200 text-blue-600 rounded-4xl'>MongoDB</span>
+        </div>
+      </div>
     </div>
   )
 }
