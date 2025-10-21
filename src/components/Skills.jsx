@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className='w-[80%] m-auto'>
       <div className="flex flex-col items-center justify-center gap-2 p-8">
-        <h1 className='text-4xl font-bold mt-8'>Technical Skills</h1>
+        <h1 className='text-2xl md:text-4xl font-bold mt-8'>Technical Skills</h1>
         <div className="bg-blue-500 rounded h-1 w-[20%] m-auto"></div>
       </div>
       <div className='md:flex items-center justify-between gap-12'>
@@ -39,7 +39,7 @@ const Skills = () => {
           <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[95%] rounded-xl" ></div>
           </div>
         </div>
-         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2'>
+         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2 mt-10 md:mt-0'>
           <h1 className='text-2xl font-bold pt-4'>Frameworks and Libraries</h1>
           <div className='flex items-center justify-between'>
           <p className='text-lg'>React.js</p>
@@ -103,7 +103,7 @@ const Skills = () => {
           <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[70%] rounded-xl" ></div>
           </div>
         </div>
-         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2'>
+         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2  mt-10 md:mt-0'>
           <h1 className='text-2xl font-bold pt-4'>Tools and Others</h1>
           <div className='flex items-center justify-between'>
           <p className='text-lg'>Git/Github</p>
