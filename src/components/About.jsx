@@ -3,7 +3,7 @@ import myImage from "../assets/profile.jpg"
 
 const About = () => {
   return (
-    <div className='md:w-[60%] m-auto p-8' >
+    <div className='w-[100%] md:w-[90%] lg:w-[60%] m-auto p-8' >
       <div className="flex flex-col items-center justify-center gap-2 p-8">
         <h1 className='text-2xl md:text-4xl font-bold mt-6'>About Me</h1>
         <div className="bg-blue-500 rounded h-1 w-[20%] m-auto"></div>
