@@ -9,7 +9,7 @@ const Home = () => {
       <div className="flex items-center justify-center flex-col gap-3">
         <h1 className='text-4xl md:text-5xl lg:text-7xl font-bold md:mt-20 text-center'>Muhammad Bilal</h1>
         <p className='text-gray-600 text-center'>Khyber Pakhtunkhwa Peshawar, Pakistan</p>
-        <p className='font-semibold text-gray-700 text-sm text-center md:text-md'>Full-Stack Developer | MERN, Next JS, Nest JS | Building Scalable Web Apps</p>
+        <p className='font-semibold text-gray-700 text-sm text-center md:text-md'>Full-Stack Developer | MERN Stack, Next JS | Building Scalable Web Apps</p>
         <div className='flex items-center justify-center gap-4 md:text-lg font-semibold'>
           <Link to='experience'  spy={true} smooth={true} duration={500} className='bg-gradient-to-r from-blue-500 to-blue-300 text-[10px] md:text-lg text-white p-2 md:p-3 rounded-2xl  hover:border-2 hover:border-blue-500 hover:from-blue-300 hover:to-blue-500 cursor-pointer transition-all duration-100'>Experience</Link>
           <a href="https://wa.me/923101096610" target='_blank' className='border-2 p-2 md:p-3 rounded-2xl text-[10px] md:text-lg border-blue-500 hover:bg-gradient-to-r hover:from-blue-300 hover:to-blue-500 hover:text-white cursor-pointer transition-all duration-100'>Contact Me</a>
@@ -27,3 +27,6 @@ const Home = () => {
 }
 
 export default Home
+
+
+
