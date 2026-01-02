@@ -1,5 +1,53 @@
 import React from 'react'
 
+const skills = [
+  {
+    heading: 'Languages',
+    firstSkill: 'JavaScript',
+    firstSkillCount: 95,
+    secondSkill: 'TypeScript',
+    secondSkillCount: 85,
+    thirdSkill: 'SQL/NoSQL',
+    thirdSkillCount: 80,
+    fourthSkill: 'HTML/CSS',
+    fourthSkillCount: 95,
+},
+  {
+    heading: 'Frameworks and Libraries',
+    firstSkill: 'React.js',
+    firstSkillCount: 95,
+    secondSkill: 'Node.js',
+    secondSkillCount: 85,
+    thirdSkill: 'Next.js',
+    thirdSkillCount: 90,
+    fourthSkill: 'Express.js',
+    fourthSkillCount: 85,
+},
+  {
+    heading: 'Databases and Cloud',
+    firstSkill: 'MongoDB',
+    firstSkillCount: 90,
+    secondSkill: 'AWS',
+    secondSkillCount: 85,
+    thirdSkill: 'PostgreSQL',
+    thirdSkillCount: 80,
+    fourthSkill: 'Docker',
+    fourthSkillCount: 70,
+},
+  {
+    heading: 'Tools and Others',
+    firstSkill: 'Git/Github',
+    firstSkillCount: 95,
+    secondSkill: 'REST APIs',
+    secondSkillCount: 85,
+    thirdSkill: 'Agile/Scrum',
+    thirdSkillCount: 90,
+    fourthSkill: 'Microservices',
+    fourthSkillCount: 85,
+},
+]
+
+
 const Skills = () => {
   return (
     <div className='w-[90%] lg:w-[80%] m-auto'>
@@ -7,134 +55,43 @@ const Skills = () => {
         <h1 className='text-2xl md:text-4xl font-bold mt-8'>Technical Skills</h1>
         <div className="bg-blue-500 rounded h-1 w-[20%] m-auto"></div>
       </div>
-      <div className='lg:flex items-center justify-between gap-12'>
-        <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2'>
-          <h1 className='text-2xl font-bold pt-4'>Languages</h1>
+     <div className="flex items-center justify-center flex-col md:flex-row flex-wrap gap-6">
+       {skills.map((skill)=>{
+        return(
+          <div className='w-full md:w-[47%] shadow p-8 flex flex-col justify-between gap-2'>
+          <h1 className='text-2xl font-bold pt-4'>{skill.heading}</h1>
           <div className='flex items-center justify-between'>
-          <p className='text-lg'>JavaScript</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>95%</p>
+          <p className='text-lg'>{skill.firstSkill}</p>
+          <p className='text-xl p-2 text-blue-500 font-bold'>{skill.firstSkillCount}%</p>
           </div>
           <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[95%] rounded-xl" ></div>
+          <div style={{ width: `${parseInt(skill.firstSkillCount)}%` }}className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 rounded-xl" ></div>
           </div>
           <div className='flex items-center justify-between'>
-          <p className='text-lg'>TypeScript</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>85%</p>
+          <p className='text-lg'>{skill.secondSkill}</p>
+          <p className='text-xl p-2 text-blue-500 font-bold'>{skill.secondSkillCount}%</p>
           </div>
           <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[85%] rounded-xl" ></div>
+          <div style={{ width: `${parseInt(skill.secondSkillCount)}%` }} className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 rounded-xl" ></div>
           </div>
           <div className='flex items-center justify-between'>
-          <p className='text-lg'>SQL/NoSQL</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>80%</p>
+          <p className='text-lg'>{skill.thirdSkill}</p>
+          <p  className='text-xl p-2 text-blue-500 font-bold'>{skill.thirdSkillCount}%</p>
           </div>
           <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[80%] rounded-xl" ></div>
+          <div style={{ width: `${parseInt(skill.thirdSkillCount)}%` }} className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 rounded-xl" ></div>
           </div>
           <div className='flex items-center justify-between'>
-          <p className='text-lg'>HTML/CSS</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>95%</p>
+          <p className='text-lg'>{skill.fourthSkill}</p>
+          <p className='text-xl p-2 text-blue-500 font-bold'>{skill.fourthSkillCount}%</p>
           </div>
           <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[95%] rounded-xl" ></div>
+          <div style={{ width: `${parseInt(skill.fourthSkillCount)}%` }} className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 rounded-xl" ></div>
           </div>
         </div>
-         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2 mt-10 md:mt-0'>
-          <h1 className='text-2xl font-bold pt-4'>Frameworks and Libraries</h1>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>React.js</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>95%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[95%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Node.js</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>85%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[85%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Next.js</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>90%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[90%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Express.js</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>85%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[85%] rounded-xl" ></div>
-          </div>
-          </div>
-        </div>
-      <div className='lg:flex items-center justify-between gap-12 mt-14'>
-        <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2'>
-          <h1 className='text-2xl font-bold pt-4'>Databases and Cloud</h1>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>MongoDB</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>90%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[90%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>AWS</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>85%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[85%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>PostgreSQL</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>80%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[80%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Docker</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>70%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[70%] rounded-xl" ></div>
-          </div>
-        </div>
-         <div className='w-[100%] shadow-xl p-8 flex flex-col justify-between gap-2  mt-10 md:mt-0'>
-          <h1 className='text-2xl font-bold pt-4'>Tools and Others</h1>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Git/Github</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>95%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[95%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>REST APIs</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>85%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[85%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Agile/Scrum</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>90%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[90%] rounded-xl" ></div>
-          </div>
-          <div className='flex items-center justify-between'>
-          <p className='text-lg'>Microservices</p>
-          <p className='text-xl p-2 text-blue-500 font-bold'>85%</p>
-          </div>
-          <div className='bg-gray-300 h-2 w-[100%] rounded-xl'>
-          <div className="h-2 bg-gradient-to-r from-blue-300 to-blue-500 w-[85%] rounded-xl" ></div>
-          </div>
-          </div>
-        </div>
+        )
+      })}
+     </div>
     </div>
   )
 }

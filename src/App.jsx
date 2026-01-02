@@ -16,7 +16,7 @@ function App() {
       <Navbar/>
       <main>
         <div id='/'>
-          <Home/>
+          <Home name='Muhammad Bilal' address='Khyber Pakhtunkhwa Peshawar, Pakistan' skill='Full-Stack Developer | MERN Stack, Next JS | Building Scalable Web Apps' />
         </div>
         <div id='about'>
           <About/>

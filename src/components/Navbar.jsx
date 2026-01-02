@@ -18,19 +18,19 @@ const Navbar = () => {
 
 
   return (
-    <div className='fixed w-full bg-gradient-to-r from-blue-500 to-blue-300'>
+    <div className='fixed w-full'>
       <div>
-        <div className='flex flex-row justify-between items-center p-5 lg:px-15 px-5 shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
+        <div className='flex flex-row justify-between items-center p-5 lg:px-15 px-5 shadow'>
           <div className='flex flex-row gap-2 items-center cursor-pointer'>
-            <h1 className='text-xl text-white font-semibold'>Muhammad Bilal</h1>
+            <h1 className='text-xl font-semibold'>Muhammad Bilal</h1>
           </div>
-          <nav className='hidden md:flex flex-row items-center gap-8 text-lg font-semibold'>
-            <Link to='/' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-white'>Home  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
-            <Link to='about' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-white'>About  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
-            <Link to='skills' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-white'>Skills  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
-            <Link to='experience' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-white'>Experience  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
-            <Link to='projects' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-white'>Projects  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
-            <Link to='contact' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-white'>Contact  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+          <nav className='hidden md:flex flex-row items-center gap-8 text-lg'>
+            <Link to='/' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Home  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='about' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>About  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='skills' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Skills  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='experience' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Experience  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='projects' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Projects  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
+            <Link to='contact' spy={true} smooth={true} duration={500} className='cursor-pointer group relative inline-block hover:text-blue-500'>Contact  <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-500 transform scale-x-0 origin-left transition-transform group-hover:scale-x-100"></span></Link>
           </nav>
           <div className='md:hidden flex items-center cursor-pointer'>
             {

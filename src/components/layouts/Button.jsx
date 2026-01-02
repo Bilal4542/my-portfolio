@@ -3,7 +3,7 @@ import React from 'react'
 const Button = ({title}) => {
   return (
     <div>
-      <button className='px-6 py-1 border-2 bg-[#FFDCAB] hover:text-[#AB6B2E] rounded-full transition-all'>
+      <button className='border-2 p-2 md:p-3 rounded-2xl text-[10px] md:text-lg border-blue-500 hover:bg-gradient-to-r hover:from-blue-300 hover:to-blue-500 hover:text-white cursor-pointer transition-all duration-100'>
         {title}
       </button>
     </div>
